@@ -5,6 +5,7 @@
   "type": "module",
   "license": "MIT",
   "author": "arifszn",
+  "homepage": "https://MR-Bellali.github.io/gitprofile",
   "repository": {
     "type": "git",
     "url": "https://github.com/arifszn/gitprofile.git"
@@ -19,9 +20,12 @@
     "lint:fix": "eslint . --fix --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "prettier": "prettier --check \"./**/*.{js,jsx,ts,tsx,css,md,json}\"",
     "prettier:fix": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\"",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
