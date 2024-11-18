@@ -9,7 +9,7 @@ const CONFIG = {
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -17,10 +17,20 @@ const CONFIG = {
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        limit: 10, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: true, // Forked projects will not be displayed if set to true.
+          projects: [
+            'Mr-Bellali/markup-language-practice',
+            'Mr-Bellali/yassine-bellali',
+            'Mr-Bellali/newtuto',
+            'Mr-Bellali/atelier',
+            'Mr-Bellali/Teat',
+            'Mr-Bellali/tuto',
+            'Mr-Bellali/test',
+            'Mr-Bellali/testing',
+            'Mr-Bellali/first-project',
+          ], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       // manual: {
@@ -29,16 +39,14 @@ const CONFIG = {
       // },
     },
     external: {
-      header: 'My Projects',
+      header: 'Mes Projets',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          title: 'Spider-Tng',
+          description: `Spider-Tng est une solution complète de commerce électronique multivendeur, adaptée à des activités variées comme les livraisons de nourriture, de courses, de colis et de médicaments, centralisées sur une seule plateforme. Conçue pour la simplicité d’utilisation, elle s’appuie sur les frameworks Laravel (v10) et Flutter pour offrir une solution robuste et évolutive.`,
+          imageUrl: '/src/assets/port.webp',
+          link: 'https://livriason.vetadigital.com',
         },
         {
           title: 'Project Name',
@@ -127,7 +135,7 @@ const CONFIG = {
       name: 'Simplone Maghreb (T4s)',
       body: 'MERN Stack developement',
       year: 'September 2024',
-      link: 'https://example.com',
+      link: '',
     },
   ],
   educations: [
@@ -171,11 +179,11 @@ const CONFIG = {
   //   },
   // ],
   // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-  },
+  // blog: {
+  //   source: 'dev', // medium | dev
+  //   username: 'arifszn', // to hide blog section, keep it empty
+  //   limit: 2, // How many articles to display. Max is 10.
+  // },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
@@ -185,11 +193,11 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'forest',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
