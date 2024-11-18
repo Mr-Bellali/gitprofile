@@ -113,6 +113,10 @@ const CONFIG = {
     // 'Antd',
     'Tailwind',
     'Figma',
+    'UML',
+    'Merise',
+    'agile/scrum',
+    'C4 modeling',
   ],
   experiences: [
     {
