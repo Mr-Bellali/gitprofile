@@ -45,7 +45,7 @@ const CONFIG = {
         {
           title: 'Spider-Tng',
           description: `Spider-Tng est une solution complète de commerce électronique multivendeur, adaptée à des activités variées comme les livraisons de nourriture, de courses, de colis et de médicaments, centralisées sur une seule plateforme. Conçue pour la simplicité d’utilisation, elle s’appuie sur les frameworks Laravel (v10) et Flutter pour offrir une solution robuste et évolutive.`,
-          imageUrl: '/src/assets/port.webp',
+          imageUrl: '/src/assets/port.jpg',
           link: 'https://livriason.vetadigital.com',
         },
         {

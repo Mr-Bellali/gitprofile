@@ -22,7 +22,10 @@
     "prettier:fix": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\"",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "dependencies": {
     "gh-pages": "^6.2.0",
@@ -55,7 +58,8 @@
     "vail": "^1.0.3",
     "vite": "^5.2.11",
     "vite-plugin-html": "^3.2.2",
-    "vite-plugin-pwa": "^0.20.0"
+    "vite-plugin-pwa": "^0.20.0",
+    "vitepress": "^1.5.0"
   },
   "keywords": [
     "git-profile",
